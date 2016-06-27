@@ -15,7 +15,7 @@ title: "Finn Woelm"
         <a class="no_underline" href="{{ post.url | prepend: site.baseurl }}">
           <div class="card post_preview">
             <div class="card-image">
-              <img src="{{ post.date | date: "%Y-%m-%d" | prepend: 'images/' | prepend: site.baseurl | append: '-' | append: post.slug | append: '.jpg'}}">
+              <img src="{{ post.date | date: "%Y-%m-%d" | prepend: '/images/' | prepend: site.baseurl | append: '-' | append: post.slug | append: '.jpg'}}">
               <span class="card-title">{{ post.title }}</span>
               <div class="card-date">{{ post.date | date: "%b %-d, %Y" }}</div>
               <div class="card-category {{ post.categories.first }}">
