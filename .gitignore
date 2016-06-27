@@ -1,0 +1,13 @@
+# Should not be put on Github -- will be generated automatically
+_site
+
+# Do not share private files and drafts
+_private
+_enable_private.yml
+_drafts
+
+# Do not share cache / local settings
+.sass-cache
+.jekyll-metadata
+Gemfile
+Gemfile.lock

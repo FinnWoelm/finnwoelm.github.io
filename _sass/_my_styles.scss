@@ -1,0 +1,106 @@
+// DEFINE COLORS OF CATEGORY TAGS
+.categories {
+  &.thoughts {
+    @extend .purple, .darken-2;
+    color: white;
+  }
+
+  &.social-change {
+    background-color: red;
+  }
+
+  &.ruby-on-rails {
+    @extend .purple, .darken-2;
+    color: white;
+  }
+
+  &.default {
+    @extend .grey-text, .text-darken-4;
+    @extend .grey, .lighten-2;
+  }
+}
+
+
+// general styles
+a, a:hover {
+  // remove underlining
+  &.no_underline { text-decoration: none !important; }
+}
+
+// links that wrap a card
+a {
+
+  & > div.card {
+    transition: all .3s ease;
+    .card-content { @extend .grey-text, .text-darken-4; }
+  }
+
+  // scale on hover
+  &:hover > div.card {
+    transform: scale(1.05);
+    // simulate z-depth-2
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+// card styling for post previews
+div.card.post_preview,
+div.card.project_preview {
+
+  // darken the background image
+  .card-image { background-color: black; }
+  .card-image img { opacity: 0.9; }
+
+  // improve readability of title
+  .card-title {
+    text-shadow: 0px 0px 5px black, 0px 0px 10px black;
+  }
+
+  // style the date or status
+  div.card-date, div.card-status {
+    position: absolute;
+    bottom: -13px;
+    background: black;
+    padding: 0px 12px;
+    left: 20px;
+    color: white;
+    border-radius: 0px 12px;
+    line-height: 32px;
+    height: 32px;
+  }
+  .card-title { padding-bottom: 30px; }
+  .card-content { padding-top: 30px; }
+
+  // style the category chip
+  div.card-category {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px;
+    border-bottom-right-radius: 12px;
+    font-size: 100%;
+    line-height: 32px;
+    height: 32px;
+    padding: 0px 12px;
+    text-transform: capitalize;
+
+    @extend .categories;
+  }
+}
+
+
+// navbar force color
+nav a.button-collapse, nav ul:not(.side-nav) a {
+  color: white !important;
+}
+
+// parallax
+article.project {
+  .banner {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

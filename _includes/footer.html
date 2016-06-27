@@ -1,0 +1,33 @@
+<footer class="page-footer indigo darken-2 grey-text text-lighten-3">
+ <div class="container">
+   <div class="row">
+     <div class="col l4 s12">
+       <h5>{{ site.title }}</h5>
+       <p>&hearts; made with Jekyll, Github, and lots of love</p>
+     </div>
+     <div class="col l4 s12">
+       <div>&nbsp;</div>
+       {% comment %}
+       <ul class="social-media-list">
+         {% if site.github_username %}
+         <li class="white-text">
+           {% include icon-github.html username=site.github_username %}
+         </li>
+         {% endif %}
+
+         {% if site.twitter_username %}
+         <li class="">
+           {% include icon-twitter.html username=site.twitter_username %}
+         </li>
+         {% endif %}
+
+       </ul>
+       <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+       {% endcomment %}
+     </div>
+     <div class="col l4 s12">
+        <p>{{ site.description }}</p>
+     </div>
+   </div>
+ </div>
+</footer>
