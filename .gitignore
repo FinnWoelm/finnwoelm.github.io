@@ -12,3 +12,6 @@ _drafts
 .jekyll-metadata
 Gemfile
 Gemfile.lock
+
+# Ignore temporary files
+*~
