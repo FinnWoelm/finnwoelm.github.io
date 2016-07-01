@@ -64,7 +64,14 @@ div.card.project_preview {
 
   // darken the background image
   .card-image { background-color: black; }
-  .card-image img { opacity: 0.9; }
+  .card-image img {
+    opacity: 0.9;
+
+    // ensure the alt tag is readable if image loading fails
+    min-height: 150px;
+    text-align: right;
+    color: white;
+  }
 
   // improve readability of title
   .card-title {
