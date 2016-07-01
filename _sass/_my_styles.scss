@@ -104,3 +104,9 @@ article.project {
     background-position: center center;
   }
 }
+
+
+// Materialbox for Images (make images in columns work correctly)
+.materialboxed.initialized.active {
+  max-width: unset;
+}
