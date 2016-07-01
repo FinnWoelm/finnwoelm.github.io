@@ -32,5 +32,5 @@ post goes live.
 Have an absolutely splendid day :)
 
 [seahorse-video]: https://www.youtube.com/watch?v=KKvFVB29yS0
-[rss-feed]: http://localhost:4000/feed.xml
+[rss-feed]: {{ '/feed.xml' | prepend: site.baseurl }}
 [twitter]: https://twitter.com/FinnWoelm
