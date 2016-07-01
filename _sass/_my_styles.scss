@@ -1,4 +1,13 @@
-// DEFINE COLORS OF CATEGORY TAGS
+/***
+ * Headings:
+ ***/
+h1 { font-size: 3.5rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2.5rem; }
+
+/***
+ * Category Tags
+ ***/
 .categories {
   &.thoughts {
     @extend .purple, .darken-2;
@@ -21,13 +30,17 @@
 }
 
 
-// general styles
+/***
+ * Links
+ ***/
 a, a:hover {
   // remove underlining
   &.no_underline { text-decoration: none !important; }
 }
 
-// links that wrap a card
+/***
+ * Cards
+ ***/
 a {
 
   & > div.card {
@@ -43,7 +56,9 @@ a {
   }
 }
 
-// card styling for post previews
+/***
+ * Cards: Post/Project Previews
+ ***/
 div.card.post_preview,
 div.card.project_preview {
 
@@ -88,13 +103,9 @@ div.card.project_preview {
   }
 }
 
-
-// navbar force color
-nav a.button-collapse, nav ul:not(.side-nav) a {
-  color: white !important;
-}
-
-// parallax
+/***
+ * Projects: banner
+ ***/
 article.project {
   .banner {
     width: 100%;
