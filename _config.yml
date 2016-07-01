@@ -25,3 +25,6 @@ collections:
 
 # Build settings
 markdown: kramdown
+
+# Exclude vendor so that Travis does not crash
+exclude: [vendor]
