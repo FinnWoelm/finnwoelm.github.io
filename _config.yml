@@ -28,3 +28,7 @@ markdown: kramdown
 
 # Exclude vendor so that Travis does not crash
 exclude: [vendor]
+
+# Minimize stylesheets
+sass:
+  style: compressed
