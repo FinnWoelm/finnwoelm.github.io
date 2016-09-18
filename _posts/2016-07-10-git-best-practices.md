@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "8 Best Practices for Git"
-date:   2016-07-10 07:11:00 +0200
+date:   2016-07-10
 categories: code
 excerpt: >
   Become a master at Git with these 8 best practices: Set-up, commit messages,

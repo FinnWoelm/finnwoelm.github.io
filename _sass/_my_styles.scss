@@ -18,8 +18,8 @@ h3 { font-size: 2.5rem; }
     background-color: red;
   }
 
-  &.ruby-on-rails {
-    @extend .purple, .darken-2;
+  &.rails {
+    @extend .red, .darken-2;
     color: white;
   }
 
