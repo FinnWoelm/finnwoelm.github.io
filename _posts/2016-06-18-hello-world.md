@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello, World!"
-date:   2016-06-27 20:30:00 +0200
+date:   2016-06-27
 categories: thoughts
 ---
 
