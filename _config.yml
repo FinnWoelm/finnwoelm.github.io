@@ -22,6 +22,9 @@ collections:
   projects:
     permalink: /projects/:path/
     output: true
+  mockups:
+    permalink: /projects/:categories/mockup/:slug/
+    output: true
 
 # Build settings
 markdown: kramdown
@@ -32,3 +35,11 @@ exclude: [vendor]
 # Minimize stylesheets
 sass:
   style: compressed
+
+# Set Defaults
+defaults:
+  - scope:
+      path: ""
+      type: mockups
+    values:
+      layout: mockup
