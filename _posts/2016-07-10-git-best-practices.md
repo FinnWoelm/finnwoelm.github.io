@@ -287,7 +287,7 @@ $ git push --tags
 ## 8. Become a Git master
 
 Github has a handy two-page cheat sheet with the most common Git commands:
-  [Git Cheat Sheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+  [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 Here are some additional commands:
 
