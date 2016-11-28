@@ -1,0 +1,194 @@
+---
+layout: mockup
+categories: upshift-network
+#background_image: "http://localhost:4000/images/projects/upshift-network/mockup/background.jpg"
+#background_image: "http://localhost:4000/images/projects/upshift-network/mockup/sunset-20398_1920.jpg"
+background_image: "http://localhost:4000/images/projects/upshift-network/mockup/rainbow-1467988_1920.jpg"
+slug: ''
+features: [{
+    title: "All Your Friends from All Networks",
+    content: "Your family is on Facebook,
+    your best friends are on Twitter,
+    your coworkers are on Linkedin,
+    that one designer friend is on Ello,
+    and there is another one on Diaspora.
+    If you want to be in touch with all of them, you need to be on all networks.
+    <br/><br/>
+    Imagine what life would be like if you could only email people who use the same
+    email provider as you. Exactly. So why do we treat social networks that way?
+    <br/><br/>
+    We want to live in a world where you can communicate with people from all networks.
+    And that's why, on Upshift Network, you can browse, message, comment, and chat with anyone
+    from Facebook, Twitter, Linkedin, Ello, and Diaspora.",
+    color: "red"
+  },{
+    title: "Complete Control over Your Data",
+    content:
+    "Data you produce is data that belongs to you.
+    You know exactly what is stored,
+    you yourself decide what is visible to whom,
+    and you can delete it all or parts of it - <em>permanently and without backup</em> - when you choose to do so.<br/><br/>
+    That's freedom in the 21st century. Basta.",
+    color: "orange darken-1"
+  },{
+    title: "Encrypted Private Messaging",
+    content: "",
+    color: "amber darken-1"
+  },{
+    title: "Personalize Your Feeds",
+    content:
+    "",
+    color: "green"
+  },{
+    title: "Your Network, Your Design",
+    content:
+    "We want your network to be a place where you feel at home. That's why you get to choose your colors and design.
+     <br/><br/>
+     Fancy big, bold buttons?<br/>
+     Prefer a mono-color, minimalist design<br/>
+     Like it colorful and vibrant?
+     <br/><br/>
+     We've got it all in 16 different themes. And you can even make your own.",
+    color: "blue darken-1"
+  },{
+    title: "Nicknames, Aliases, and Superhero Identities welcome!",
+    content:
+    "We want you to use the identity that feels right for you. We will never ask for your ID or birth certificate.
+    <br/><br/>
+    Beyond that, in a world in which persecution of people for their beliefs and values is still a reality, it is at times necessary to remain anonymous.
+    You are the best one to make that call. That's why your identity is your decision.",
+    color: "indigo"
+  }]
+---
+
+<div class="container-fluid" style="position: absolute; top:0px; width:100%;">
+
+<div id="home" class="valign-wrapper" style="
+              background: url('http://localhost:4000/images/projects/upshift-network/mockup/rainbow-1467988_1920.jpg') center center no-repeat; background-size: cover;">
+    <div class="valign" style="margin: auto;padding-top: 100px; padding-bottom: 150px; width:100%;">
+      <div class="floating-text" style="color: white; text-shadow: 0px 0px 5px rgba(0,0,0,.5), 0px 0px 10px rgba(0,0,0,.8), 10px 10px 20px black;">
+        <h1 class="center-align">Welcome to Upshift Network</h1>
+      <!--  <h2 class="center-align">Community. Collaboration. Democracy.</h2>-->
+        <h4 class="center-align">An Open Source Social Network</h4>
+        <div class="container">
+          <p class="center-align flow-text">
+            Many of us use social networks every day: To stay in touch with friends,
+            to collaborate, to work, to follow the news.
+            <br/><br/>
+            Social networks have become so important in our lives,
+            some are seeking networks that are transparent, open, ad-free,
+            for-purpose, democratic, and protective of their privacy,
+
+            <br/><br/>
+            We want everyone to have that choice.
+          </p>
+        </div>
+      </div>
+      <div>
+        <br><br>
+      </div>
+      <div class="center-align">
+        <a href="#" class="waves-effect waves-light btn-large red">Join</a>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div style="
+    margin-top: -85px;
+    z-index: 100;
+    position: relative;">
+    <a href="#">
+      <div style="color: white; width:100%; background-color: rgba(0,0,0,.7); padding: 20px; z-index:100;">
+        <h5 class="center-align">
+          <span style="position: relative;">
+            <i class="material-icons" style="position: absolute; left:-20px; left:-30px;">keyboard_arrow_down</i>
+            Learn More
+          </span>
+        </h5>
+      </div>
+    </a>
+  </div>
+
+  <!--
+  <div id="community" class="container-fluid" style="padding-top:40px; padding-bottom: 40px;">
+    <div class="container">
+      <h1 class="left-align">Community</h1>
+    </div>
+  </div>
+-->
+  {% for feature in page.features %}
+    <div class="container-fluid {{ feature.color }} white-text" style="padding-top:20px; padding-bottom:20px;">
+      <div class="container">
+        <h3>{{ feature.title }}</h3>
+      </div>
+    </div>
+    <div class="container">
+      <p class="flow-text">
+        {{ feature.content }}
+      </p>
+    </div>
+  {% endfor %}
+
+  <div class="container-fluid">
+    <h2 class="left-align">Collaboration</h2>
+    <h3>Integration with other Networks</h3>
+    <h3>Full Control over Your Data</h3>
+    <h3>Encrypted Private Messaging</h3>
+    <h3>Customized Feeds</h3>
+    <h3>Your Network, Your Design</h3>
+  </div>
+
+  <div class="container-fluid">
+    <h2 class="left-align">Democracy</h2>
+    <h3>Integration with other Networks</h3>
+    <h3>Full Control over Your Data</h3>
+    <h3>Encrypted Private Messaging</h3>
+    <h3>Customized Feeds</h3>
+    <h3>Your Network, Your Design</h3>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    // # resize_home_to_fullscreen()
+    // Resizes the top-most div (home) that holds all the contain the user
+    // first sees when visiting the website. It is made fullscreen unless the
+    // height of the home div is already greater than the height of the
+    // viewport
+    function resize_home_to_fullscreen() {
+
+      // reset height of home
+      $("#home").css("height", "unset");
+
+      // get the natural height
+      var natural_height_of_home = $("#home").height();
+
+      // get the viewport height
+      var height_of_viewport = $(window).height();
+
+      // if viewport height is greater than home's natural height, then set home
+      // height to viewport height
+      if ( height_of_viewport > natural_height_of_home ) {
+        $("#home").height( height_of_viewport );
+      }
+
+    }
+
+    // resize home div when the DOM is loaded
+    resize_home_to_fullscreen();
+
+    // and whenever we resize the window
+    $( window ).resize(function() {
+      resize_home_to_fullscreen();
+    });
+
+
+  });
+
+</script>

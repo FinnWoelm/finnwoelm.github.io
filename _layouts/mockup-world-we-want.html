@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  {% assign mockup_title = page.categories.first | replace:"-"," " | capitalize | prepend: "Mockup: " %}
+  {% assign mockup_excerpt = page.categories.first | replace:"-"," " | capitalize | prepend: "Mockup for " %}
+  {% include mockups/head-mdi.html mockup_title=mockup_title mockup_excerpt=mockup_excerpt %}
+
+  <body class="color-scheme primary-{{page.color}} primary-darken-2 {{page.color}} lighten-4">
+
+    {% assign mockup_base_url = page.categories.first | prepend: '/projects/' | append: '/mockup' %}
+    {% include {{page.categories.first | prepend: 'mockups/' | append: '/header.html'}} mockup_base_url=mockup_base_url %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include {{page.categories.first | prepend: 'mockups/' | append: '/footer.html'}} %}
+
+    <script>
+      $(function() {
+
+        // open external links in new tab
+        // credits: http://www.unseenrevolution.com/jquery-external-links-new-window/
+        // modified by @finnwoelm to also include https links
+        $("a[href*='http://'], a[href*='https://']").
+          not("[href*='"+location.hostname.replace("www.","")+"']").
+          each(function() {
+            jQuery(this).click(function(event) {
+             event.preventDefault();
+             event.stopPropagation();
+             window.open(this.href, '_blank');
+            }).addClass('externalLink');
+        });
+
+      });
+
+    </script>
+
+  </body>
+
+</html>

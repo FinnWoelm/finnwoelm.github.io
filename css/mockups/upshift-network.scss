@@ -1,0 +1,67 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "materialize";
+
+// sticky footer
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+div.upshift_network_card {
+
+  border-radius: 5px;
+
+  $color_scheme: color("red", "darken-2");
+
+  > * {
+    padding: 10px;
+  }
+
+  .action {
+    @extend .white-text;
+    background-color: $color_scheme;
+    margin-right: 10px;
+    border-top-left-radius: 5px;
+    //border-right: 1px solid transparentize(white, .5);
+    padding: 10px;
+  }
+
+  .action > i {
+    font-size: 20px;
+    line-height: 15px;
+    overflow:hidden;
+    position: relative;
+    top: 1px;
+    left: 1px;
+  }
+
+  .title {
+    font-weight: bold;
+    //@extend .white-text;
+    //@extend .red, .darken-2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    a {
+      //color: transparentize(white, .3);
+    }
+  }
+
+  .title {
+    border-bottom: 2px solid $color_scheme;
+  }
+
+  .description {
+    border-bottom: 1px solid rgba(0,0,0,.2);
+  }
+}

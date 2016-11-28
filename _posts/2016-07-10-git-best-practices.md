@@ -10,14 +10,14 @@ excerpt: >
 
 {{ page.excerpt }}
 
-1. [Set up Git](#set-up-git)
-1. [Associate your text editor with Git](#associate-your-text-editor-with-git)
-1. [Work on one issue at a time](#work-on-one-issue-at-a-time)
-1. [Write clear commit messages](#write-clear-commit-messages)
-1. [Provide placeholders for files ignored by .gitignore](#provide-placeholders-for-files-ignored-by-gitignore)
-1. [Find your Git workflow](#find-your-git-workflow)
-1. [Use version tags](#use-version-tags)
-1. [Become a Git master](#become-a-git-master)
+1. [Set up Git](#1-set-up-git)
+1. [Associate your text editor with Git](#2-associate-your-text-editor-with-git)
+1. [Work on one issue at a time](#3-work-on-one-issue-at-a-time)
+1. [Write clear commit messages](#4-write-clear-commit-messages)
+1. [Provide placeholders for files ignored by .gitignore](#5-provide-placeholders-for-files-ignored-by-gitignore)
+1. [Find your Git workflow](#6-find-your-git-workflow)
+1. [Use version tags](#7-use-version-tags)
+1. [Become a Git master](#8-become-a-git-master)
 
 > *Never used Git before? Get your hands dirty with this super newby-friendly
 Git tutorial: [https://try.github.io](https://try.github.io)*
@@ -134,7 +134,7 @@ Pro Tip 1: Sometimes subject-only commit messages are sufficient. In those
 Pro Tip 2: You can amend an unpublished commit message by typing
   `git commit --amend` (more on that [here](https://help.github.com/articles/changing-a-commit-message/))
 
-## 5.Provide placeholders for files ignored by .gitignore
+## 5. Provide placeholders for files ignored by .gitignore
 
 This allows the user to get started with your project more quickly. They can
   just rename or reconfigure a few sample placeholder files, rather than
@@ -287,7 +287,7 @@ $ git push --tags
 ## 8. Become a Git master
 
 Github has a handy two-page cheat sheet with the most common Git commands:
-  [Git Cheat Sheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+  [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 Here are some additional commands:
 
