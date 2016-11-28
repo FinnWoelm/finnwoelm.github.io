@@ -27,6 +27,12 @@
 
 }
 
+#hero img.logo {
+  @media #{$small-and-down} {
+    max-width: 250px;
+  }
+}
+
 #header .brand-logo img.logo{
   height: 38px;
   width: auto;
@@ -40,29 +46,59 @@
   }
 }
 
-.card .card-image img {
-  width: auto !important;
-  position: static !important;
-  display: inline-block !important;
+.card:not(.horizontal) {
+  .card-image img {
+    width: auto !important;
+    position: static !important;
+    display: inline-block !important;
+  }
+
+  .card-image {
+    border-bottom: 1px solid rgba(160,160,160,0.2);
+  }
+
+  .card-header {
+    position: relative;
+    top: -10px;
+    left: -10px;
+  }
+
+  .card-header .card-title {
+    color: white;
+    padding: 5px 10px;
+  }
 }
 
-.card .card-image {
-  border-bottom: 1px solid rgba(160,160,160,0.2);
-}
+.card.horizontal {
+  .card-image {
+    max-width: 25%;
+    width: 25%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
-.card .card-header {
-  position: relative;
-  top: -10px;
-  left: -10px;
-}
+  .card-action {
+    padding: 10px 20px;
+    border-top: 1px solid rgba(255, 255, 255, .5);
 
-.card .card-header .card-title {
-  color: white;
-  padding: 5px 10px;
+    p {
+      margin: 0px;
+      text-transform: uppercase;
+    }
+  }
+
+  &:hover, &:focus {
+    @extend .z-depth-5;
+  }
 }
 
 .no-margin-bottom {
   margin-bottom: 0px !important;
+}
+
+.no-margin-top {
+  margin-top: 0px !important;
 }
 
 a.btn.with-icon,
