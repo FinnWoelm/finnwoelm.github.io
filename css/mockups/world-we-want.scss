@@ -1,0 +1,139 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "materialize";
+
+.color-scheme {
+
+  @each $color_name, $color in $colors {
+    @each $color_type, $color_value in $color {
+      @if $color_type == "base" {
+        &.primary-#{$color_name} .primary-color,
+        &.secondary-#{$color_name} .secondary-color {
+          background-color: $color_value !important;
+        }
+      }
+      @else {
+        &.primary-#{$color_name}.primary-#{$color_type} .primary-color,
+        &.secondary-#{$color_name}.secondary-#{$color_type} .secondary-color {
+          background-color: $color_value !important;
+        }
+      }
+    }
+  }
+
+}
+
+#header .brand-logo img.logo{
+  height: 38px;
+  width: auto;
+  margin-top: 13px;
+  margin-right: 13px;
+
+  @media #{$small-and-down} {
+    height: 34px;
+    margin-top: 11px;
+    margin-right: 11px;
+  }
+}
+
+.card .card-image img {
+  width: auto !important;
+  position: static !important;
+  display: inline-block !important;
+}
+
+.card .card-image {
+  border-bottom: 1px solid rgba(160,160,160,0.2);
+}
+
+.card .card-header {
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+.card .card-header .card-title {
+  color: white;
+  padding: 5px 10px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px !important;
+}
+
+a.btn.with-icon,
+a.btn-flat.with-icon {
+
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+
+  i {
+
+    position: static !important;
+    width: 30px;
+    border-color: rgba(255,255,255,.5);
+    border-style: solid;
+    border-width: 0px;
+
+    &.left {
+      border-right-width: 1px;
+      padding-right: 10px;
+      margin-right: 10px !important;
+    }
+
+    &.right {
+      border-left-width: 1px;
+      padding-left: 10px;
+      margin-left: 10px !important;
+    }
+
+  }
+}
+
+@media #{$small-and-down} {
+  a.btn, a.btn-flat {
+    width: 100%;
+  }
+
+  .row .col.s12:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+div.legal p {
+  font-size: 10px;
+}
+
+#footer .row:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+#footer img.logo {
+  margin-right: 20px;
+  max-width: 100px;
+}
+
+.color-scheme-facebook {
+  background-color: #3B5998 !important;
+  @extend .white-text;
+}
+
+.color-scheme-twitter {
+  background-color: #1DA1F2 !important;
+  @extend .white-text;
+}
+
+// sticky footer
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
