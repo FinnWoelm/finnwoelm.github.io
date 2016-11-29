@@ -1,17 +1,23 @@
 <nav id="header" class="primary-color darken-2 z-depth-1" >
   <div class="container">
     <div class="nav-wrapper">
-      <a class="brand-logo" href="{{ include.mockup_base_url }}/index">
+      <a class="brand-logo" href="{{ include.mockup_base_url }}">
         <img class="logo left" src="/images/projects/world-we-want/mockup/logo.png" alt="logo">
-        World We Want
+        <span class="hide-on-small-only">World We Want</span>
       </a>
       <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="mdi mdi-menu"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}">Add Your Vision</a></li>
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}">ADD YOUR VISION</a></li>
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-facebook"></i></a></li>
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-twitter"></i></a></li>
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-email"></i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-nav">
-        <li><a href="{{ site.baseurl }}">Home</a></li>
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}">Add Your Vision</a></li>
+        <li><a href="{{ site.baseurl }}"><i class="mdi mdi-home"></i> Home</a></li>
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-plus"></i>Add Your Vision</a></li>
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-facebook"></i> Facebook</a></li>
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-twitter"></i> Twitter</a></li>
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-email"></i> Newsletter</a></li>
       </ul>
     </div>
   </div>
