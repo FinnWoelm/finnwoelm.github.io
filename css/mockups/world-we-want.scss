@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+$secondary-color: #212121;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "materialize";
 
@@ -53,8 +55,13 @@
     display: inline-block !important;
   }
 
-  .card-image {
+  .card-image, .card-description {
     border-bottom: 1px solid rgba(160,160,160,0.2);
+  }
+
+  .card-description {
+    padding: 20px;
+    border-radius: 0 0 2px 2px;
   }
 
   .card-header {
