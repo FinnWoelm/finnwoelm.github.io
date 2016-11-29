@@ -7,17 +7,17 @@
       </a>
       <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="mdi mdi-menu"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}">ADD YOUR VISION</a></li>
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-facebook"></i></a></li>
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-twitter"></i></a></li>
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-email"></i></a></li>
+        <li><a href="/projects/world-we-want/mockup/add/">ADD YOUR VISION</a></li>
+        <li><a href="https://www.facebook.com/World-We-Want-1494999360516291/" target="_blank"><i class="mdi mdi-facebook"></i></a></li>
+        <li><a href="https://twitter.com/World_We_Want" target="_blank"><i class="mdi mdi-twitter"></i></a></li>
+        <li><a href="http://eepurl.com/cqZRXr" target="_blank"><i class="mdi mdi-email"></i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-nav">
         <li><a href="{{ site.baseurl }}"><i class="mdi mdi-home"></i> Home</a></li>
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-plus"></i>Add Your Vision</a></li>
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-facebook"></i> Facebook</a></li>
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-twitter"></i> Twitter</a></li>
-        <li><a href="{{ my_page.url | prepend: site.baseurl }}"><i class="mdi mdi-email"></i> Newsletter</a></li>
+        <li><a href="/projects/world-we-want/mockup/add/"><i class="mdi mdi-plus"></i>Add Your Vision</a></li>
+        <li><a href="https://www.facebook.com/World-We-Want-1494999360516291/" target="_blank"><i class="mdi mdi-facebook"></i> Facebook</a></li>
+        <li><a href="https://twitter.com/World_We_Want" target="_blank"><i class="mdi mdi-twitter"></i> Twitter</a></li>
+        <li><a href="http://eepurl.com/cqZRXr}" target="_blank"><i class="mdi mdi-email"></i> Newsletter</a></li>
       </ul>
     </div>
   </div>
@@ -26,5 +26,16 @@
 <script>
   $( document ).ready(function() {
    $(".button-collapse").sideNav();
+
+    $('select').material_select();
+
+    $("select").change(function() {
+      current_color = $.grep($("body").attr('class').split(" "), function( a ) {
+        return a.indexOf("primary-") === 0 && a.indexOf("primary-darken-") === -1;
+      })[0].replace("primary-",'');
+
+      new_color = $(this).val();
+      $("body").removeClass("primary-" + current_color + " " + current_color).addClass("primary-" + new_color + " " + new_color);
+    });
   });
 </script>
