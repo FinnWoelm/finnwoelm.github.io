@@ -28,6 +28,11 @@ h3 { font-size: 2.5rem; }
     color: white;
   }
 
+  &.code {
+    @extend .blue, .darken-2;
+    color: white;
+  }
+
   &.default {
     @extend .grey-text, .text-darken-4;
     @extend .grey, .lighten-2;
