@@ -23,6 +23,11 @@ h3 { font-size: 2.5rem; }
     color: white;
   }
 
+  &.react {
+    @extend .blue, .lighten-3;
+    color: black;
+  }
+
   &.code {
     @extend .blue, .darken-2;
     color: white;
