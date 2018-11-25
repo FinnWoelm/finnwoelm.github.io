@@ -1,0 +1,27 @@
+---
+layout: default
+title:  Openly Journal
+---
+
+<div class="container">
+  <header class="post-header center-align">
+    <h1 class="page-heading">Openly Journal</h1>
+  </header>
+</div>
+
+<div class='divider'></div>
+
+<div class='container'>
+  <div class="row">
+    {% for post in site.categories.openly %}
+      <p>
+        <b>{{ post.date | date: "%b %-d, %Y // %l:%M%P" }} @ {{ post.location }}</b>
+      </p>
+
+      {{ post.content }}
+
+      <div class='divider'></div>
+
+    {% endfor %}
+  </div>
+</div>

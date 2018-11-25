@@ -13,9 +13,11 @@ layout: default
             {{ page.date | date: "%b %-d, %Y" }}
           </span>
         </time>
-        <span class="chip categories {{ page.categories.first }}">
-          {{ page.categories.first | replace:"-"," " | capitalize }}
-        </span>
+        {% for category in page.categories %}
+          <span class="chip categories {{ category }}">
+            {{ category | replace:"-"," " | capitalize }}
+          </span>
+        {% endfor %}
         {% if page.author %} •
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span itemprop="name">{{ page.author }}</span>
