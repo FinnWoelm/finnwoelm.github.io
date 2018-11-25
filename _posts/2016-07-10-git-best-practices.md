@@ -22,7 +22,7 @@ excerpt: >
 > *Never used Git before? Get your hands dirty with this super newby-friendly
 Git tutorial: [https://try.github.io](https://try.github.io)*
 
-## 1. Set up Git
+# 1. Set up Git
 
 1. Set your username  
   Set with `git config --global user.name "YOUR NAME"`  
@@ -38,7 +38,7 @@ Git tutorial: [https://try.github.io](https://try.github.io)*
   [Source: Handle line endings in Git](https://help.github.com/articles/dealing-with-line-endings/)
 
 
-## 2. Associate your text editor with Git
+# 2. Associate your text editor with Git
 
 If you are using Atom, you can quickly tell Git to use Atom for commit messages.
 
@@ -48,7 +48,7 @@ $ git config --global core.editor "atom --wait"
 
 For other editors and more info, see [associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/).
 
-## 3. Work on one issue at a time
+# 3. Work on one issue at a time
 
 Each change, addition, or removal you make to your code (adding a controller,
   modifying a model) should go into its own commit with its own clear commit
@@ -70,7 +70,7 @@ With Git, it's easy to explicitly review what you are about to commit:
 
 [Source](https://www.lullabot.com/articles/git-best-practices-workflow-guidelines)
 
-## 4. Write clear commit messages
+# 4. Write clear commit messages
 
 1. Every commit message should consist of a subject line and a body
 1. Line 1: Subject line
@@ -134,7 +134,7 @@ Pro Tip 1: Sometimes subject-only commit messages are sufficient. In those
 Pro Tip 2: You can amend an unpublished commit message by typing
   `git commit --amend` (more on that [here](https://help.github.com/articles/changing-a-commit-message/))
 
-## 5. Provide placeholders for files ignored by .gitignore
+# 5. Provide placeholders for files ignored by .gitignore
 
 This allows the user to get started with your project more quickly. They can
   just rename or reconfigure a few sample placeholder files, rather than
@@ -149,7 +149,7 @@ If, for example, you are using the Rails Dotenv gem, you may want to provide
   ignored files, that a user will need to execute your project locally, to a
   minimum.
 
-## 6. Find your Git workflow
+# 6. Find your Git workflow
 
 There is no one way to use Git for your project. Your usage will depend on
 whether you are developing on your own, in a small team, or in a large open
@@ -174,7 +174,7 @@ $ git branch email-notifications
 $ git checkout email-notifications
 ~~~
 
-### Workflow: Merging
+## Workflow: Merging
 
 When we merge a new feature into our development branch, there are two
 scenarios to consider:
@@ -185,7 +185,7 @@ history of the branch (scenario #1)
 2. We have developed a full new feature, so we do want to keep a history of this
 branch in its entirety (scenario #2)
 
-#### Scenario #1: Fast forward
+### Scenario #1: Fast forward
 
 Minor modifications are bug fix, spelling mistakes, and other changes affecting
 just a few lines of codes. There is no change in functionality or design.
@@ -201,7 +201,7 @@ $ git checkout development
 $ git merge YOUR_BRANCH_NAME --ff-only
 ~~~
 
-#### Scenario #2: True Merge
+### Scenario #2: True Merge
 
 New features are substantial changes that introduce new functionality,
 capabilities, or design to a project.
@@ -213,7 +213,7 @@ $ git checkout development
 $ git merge YOUR_BRANCH_NAME --no-ff
 ~~~
 
-### Workflow: Additional Resources
+## Workflow: Additional Resources
 
 1. I am working on two new blog posts: One on Solo Git Workflow and one on Team Git Workflow. Stay tuned!
 1. Read more [about Git workflow on Github](https://guides.github.com/introduction/flow/).
@@ -222,7 +222,7 @@ using master, development, release, hotfix, and feature branches.
 1. See this [great article by Christophe Porteneuve](https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa)
 on when to merge and when to rebase.
 
-## 7. Use version tags
+# 7. Use version tags
 
 Tags are mostly used to specify version numbers that go along with your code.
 
@@ -261,7 +261,7 @@ To list all tags, do `git tag` or filter tags with
 `git tag -l some_search_query`.
 
 
-### Renaming tags
+## Renaming tags
 
 Accidentally added the wrong tag?
 
@@ -284,7 +284,7 @@ $ git push --tags
 # Pushes the new tag to Github
 ~~~
 
-## 8. Become a Git master
+# 8. Become a Git master
 
 Github has a handy two-page cheat sheet with the most common Git commands:
   [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
