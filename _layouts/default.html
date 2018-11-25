@@ -7,32 +7,22 @@
 
     {% include header.html %}
 
+    <!-- Side navigation -->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li><a href="#!">First Sidebar Link</a></li>
+      <li><a href="#!">Second Sidebar Link</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
     <main>
       {{ content }}
     </main>
 
     {% include footer.html %}
 
+    {% include materialize_auto_init.html %}
 
-    <script>
-      $(function() {
-
-        // open external links in new tab
-        // credits: http://www.unseenrevolution.com/jquery-external-links-new-window/
-        // modified by @finnwoelm to also include https links
-        $("a[href*='http://'], a[href*='https://']").
-          not("[href*='"+location.hostname.replace("www.","")+"']").
-          each(function() {
-            jQuery(this).click(function(event) {
-             event.preventDefault();
-             event.stopPropagation();
-             window.open(this.href, '_blank');
-            }).addClass('externalLink');
-        });
-
-      });
-
-    </script>
+    {% include external_links_as_new_tabs.html %}
 
   </body>
 
