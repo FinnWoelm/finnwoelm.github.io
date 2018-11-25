@@ -1,9 +1,41 @@
+// side navigation
+main {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.radius-5 {
+  border-radius: 5px;
+}
+
 /***
  * Headings:
  ***/
-h1 { font-size: 3.5rem; }
-h2 { font-size: 3rem; }
-h3 { font-size: 2.5rem; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2.0rem; }
+
+.post-title, .page-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
 
 /***
  * Category Tags
@@ -30,6 +62,11 @@ h3 { font-size: 2.5rem; }
 
   &.code {
     @extend .blue, .darken-2;
+    color: white;
+  }
+
+  &.blog {
+    @extend .grey, .darken-4;
     color: white;
   }
 

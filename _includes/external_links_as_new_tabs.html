@@ -1,0 +1,18 @@
+<script>
+  $(function() {
+
+    // open external links in new tab
+    // credits: http://www.unseenrevolution.com/jquery-external-links-new-window/
+    // modified by @finnwoelm to also include https links
+    $("a[href*='http://'], a[href*='https://']").
+      not("[href*='"+location.hostname.replace("www.","")+"']").
+      each(function() {
+        jQuery(this).click(function(event) {
+         event.preventDefault();
+         event.stopPropagation();
+         window.open(this.href, '_blank');
+        }).addClass('externalLink');
+    });
+
+  });
+</script>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Finn Woelm"
+title: Home
 ---
 
 <div class="container">
@@ -8,7 +8,7 @@ title: "Finn Woelm"
   <h1 class="page-heading">Posts</h1>
 
   <div class="row">
-    {% for post in site.posts %}
+    {% for post in site.categories.blog %}
 
       <div class="col s12 m6 l4">
 
@@ -18,8 +18,8 @@ title: "Finn Woelm"
               <img src="{{ post.date | date: "%Y-%m-%d" | prepend: '/images/posts/' | prepend: site.baseurl | append: '-' | append: post.slug | append: '/featured_image.jpg'}}" alt="Featured Image for {{ post.title }}" >
               <span class="card-title">{{ post.title }}</span>
               <div class="card-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-              <div class="card-category {{ post.categories.first }}">
-                {{ post.categories.first | replace:"-"," " | capitalize }}
+              <div class="card-category {{ post.categories[1] }}">
+                {{ post.categories[1] | replace:"-"," " | capitalize }}
               </div>
             </div>
             <div class="card-content">
@@ -36,7 +36,7 @@ title: "Finn Woelm"
   </div>
 
 
-  <h1 class="page-heading">Projects</h1>
+  <!-- <h1 class="page-heading">Projects</h1>
 
   <div class="row">
     {% for project in site.projects %}
@@ -64,7 +64,7 @@ title: "Finn Woelm"
     <div class="col s12 {% cycle 'hide-on-med-and-up', 'hide-on-large-only', ''  %} {% cycle 'hide-on-med-only', ''  %} "></div>
 
     {% endfor %}
-  </div>
+  </div> -->
 
 
 </div>

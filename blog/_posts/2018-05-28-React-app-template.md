@@ -9,7 +9,7 @@ excerpt: "5 steps to get started with React, Material Design, and Hot Reloading.
 If you're new to React, you may be wondering how to get yourself started. Below
 are the five steps I follow to set up any new React app that I start working on.
 
-### Step 1: Create new React app
+# Step 1: Create new React app
 
 Let's get started by creating a new react project using [`create-react-app`](https://github.com/facebook/create-react-app):
 
@@ -17,7 +17,7 @@ Let's get started by creating a new react project using [`create-react-app`](htt
 $ npx create-react-app "name-of-app"
 ```
 
-### Step 2: Set up Material CSS framework
+# Step 2: Set up Material CSS framework
 
 We will install and use [`material-ui`](https://material-ui.com/).
 
@@ -42,7 +42,7 @@ function MyComponent(props) {
 }
 ~~~
 
-### Step 3: Set up Roboto font
+# Step 3: Set up Roboto font
 
 1. We will install and use [`typeface-roboto`](https://github.com/KyleAMathews/typefaces/tree/master/packages/roboto).
 
@@ -65,7 +65,7 @@ function MyComponent(props) {
    ```
 
 
-### Step 4: Set up Material icons
+# Step 4: Set up Material icons
 
 We will install and use [`material-ui/icons`](https://www.npmjs.com/package/@material-ui/icons).
 
@@ -89,7 +89,7 @@ function MyComponent(props) {
 ~~~
 
 
-### Step 5: Set up hot reloading
+# Step 5: Set up hot reloading
 Credit for [hot reloading without ejecting Create React App belongs to Dave Ceddia](https://daveceddia.com/hot-reloading-create-react-app/).
 
 1. Add react-app-rewired, react-app-rewire-hot-loader, and react-hot-loader packages:
