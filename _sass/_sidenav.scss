@@ -1,0 +1,43 @@
+.sidenav {
+  // wrapper for the header
+  .header-link {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    // give header equal spacing on all four sides
+    margin-bottom: $gutter-width / 2;
+    margin-top: $gutter-width / 2;
+
+    // avoid space below the image
+    img {
+      display: block;
+    }
+  }
+
+  a {
+    color: color('blue', 'lighten-3');
+  }
+
+  // match link padding to that of header
+  li > a {
+    padding-left: $gutter-width / 2;
+    padding-right: $gutter-width / 2;
+  }
+
+  // use white color scheme for links
+  li > a, .header-link {
+    color: inherit;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  // lighten divider color
+  .divider {
+    background-color: color('grey', 'base')
+  }
+}

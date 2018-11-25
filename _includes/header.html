@@ -1,25 +1,51 @@
-<nav class="orange darken-2" >
+<nav class="grey darken-4 hide-on-large-only" >
   <div class="container">
     <div class="nav-wrapper">
-      <a class="brand-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
-      {% comment %}
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="{{ site.baseurl }}/">{{ site.title }}</a></li>
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      {% endcomment %}
+      <a class="brand-logo truncate" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </div>
 </nav>
+
+<div id="slide-out" class="grey darken-4 white-text sidenav sidenav-fixed">
+  <a href="{{ site.baseurl }}/" class='header-link'>
+    <div class='row header'>
+      <div class='col s4'>
+        <img src="{{ '/images/finn.png' | prepend: site.baseurl }}" class='responsive-img radius-5'/>
+      </div>
+      <div class='col s8'>
+        <p class='flow-text no-margin'>
+          <b>Finn Woelm</b>
+        </p>
+        <p class='no-margin'>
+          Hacker &middot; Entrepreneur
+        </p>
+      </div>
+    </div>
+  </a>
+  <div class='row'>
+    <div class='col s12'>
+      <p class='no-margin'>
+        Stories from the life of Finn,
+        <a href='https:///www.openly.one/'>Openly</a>,
+        and other things.
+      </p>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <ul class='grey-text text-lighten-1 no-margin'>
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+      <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <div class="divider no-margin"></div>
+  <div class='row'>
+    <div class='col s12'>
+      <p class='deep-orange-text text-lighten-4'>
+        made with Jekyll, GitHub, and love &hearts;
+      </p>
+    </div>
+  </div>
+</div>
