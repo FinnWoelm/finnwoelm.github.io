@@ -37,6 +37,19 @@ strong {
   font-weight: bold;
 }
 
+// Do not overwrite UL style
+.post {
+  ul {
+    list-style-type: disc;
+    padding-left: 40px;
+
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+
+
 /***
  * Category Tags
  ***/
