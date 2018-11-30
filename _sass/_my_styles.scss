@@ -47,6 +47,12 @@ strong {
       list-style-type: disc;
     }
   }
+
+  // Add responsive sizing to images
+  img {
+    max-width: 100%;
+    display: block;
+  }
 }
 
 
