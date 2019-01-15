@@ -10,6 +10,10 @@ order: 3
 - [Gregory David Roberts: Shantaram](https://www.goodreads.com/book/show/33600.Shantaram)
 - [Thomas More: Utopia](https://www.goodreads.com/book/show/18414.Utopia)
 
+# Business Books
+
+- [The Mom Test](http://momtestbook.com/)
+
 # Blogs, Reads, and Listens
 
 - [Tim Urban: Wait But Why](http://waitbutwhy.com/)
@@ -18,7 +22,8 @@ order: 3
 
 # Desserts
 
-- [Vegan Mousse au Chocolate (in German, sorry, but it's the best recipe)](https://www.chefkoch.de/rezepte/1768701286784783/Vegane-Mousse-au-chocolat.html)
+- [Vegan & Simple Mousse au Chocolate (in German, sorry, but it's the best recipe)](https://www.chefkoch.de/rezepte/1768701286784783/Vegane-Mousse-au-chocolat.html)
+- [Vegan & Simple Banana Ice Cream](https://simpleveganblog.com/one-ingredient-banana-ice-cream/)
 - [Vegan & GF no-bake Raspberry Cheese Cake](https://themovementmenu.com/recipes/easy-vegan-raspberry-cheesecake/)
 
 # Foods
@@ -34,14 +39,10 @@ order: 3
 
 # Music
 
-- [Sleeping at Last](https://www.youtube.com/channel/UCvUYLLON82Gx6MW62xTLVLQ)
-  - [Saturn](https://www.youtube.com/watch?v=dzNvk80XY9s)
-  - [Two](https://www.youtube.com/watch?v=PrDzd4ufypE)
-  - [You Are Enough](https://www.youtube.com/watch?v=jrlRyZq19zQ)
 - [Gabrielle Aplin](https://www.youtube.com/channel/UCYbATPRc4EObXaajgdXFQ0g)
   - [My Mistakes](https://www.youtube.com/watch?v=wAUC_pm-zlc)
   - [Waking Up Slow](https://www.youtube.com/watch?v=cTSdJEGswtg)
-  - [Home](https://www.youtube.com/watch?v=1pLsb1YMsKE)
+- [Sleeping at Last: Saturn](https://www.youtube.com/watch?v=dzNvk80XY9s)
 - [Kesha:  Praying](https://www.youtube.com/watch?v=v-Dur3uXXCQ)
 - [Grace Gaustad: Chasing Cars](https://www.youtube.com/watch?v=6bhKAi-fqyw)
 - [Of Monsters and Men: Wolves Without Teeth](https://www.youtube.com/watch?v=VAI5GSyXMjA)
@@ -49,6 +50,7 @@ order: 3
 - [Alessia Cara: Scars to Your Beautiful](https://www.youtube.com/watch?v=MWASeaYuHZo)
 - [Black Eyed Peas: Where is the Love?](https://www.youtube.com/watch?v=WpYeekQkAdc)
 - [Matisyahu: One Day](https://www.youtube.com/watch?v=nwAYpLVyeFU)
+- [Odesza: A Moment Apart](https://www.youtube.com/watch?v=eQEMJPE6cfI)
 
 # Snacks
 
