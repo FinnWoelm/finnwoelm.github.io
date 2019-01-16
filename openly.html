@@ -5,14 +5,15 @@ order: 2
 ---
 
 {% for post in site.categories.openly %}
-  <p>
-    <b>{{ post.date | date: "%b %-d, %Y // %l:%M%P" }} @ {{ post.location }}</b>
-  </p>
+  <div id='{{ post.date | date: "%b-%-d-%Y" | downcase }}'>
+    <p>
+      <b>{{ post.date | date: "%b %-d, %Y // %l:%M%P" }} @ {{ post.location }}</b>
+    </p>
 
-  {{ post.content }}
+    {{ post.content }}
+  </div>
 
   <div class='divider'></div>
-
 {% endfor %}
 
 <p>You can <a href='https://docs.google.com/document/d/1qOlu_5Ujv6vPbooeAyG8Nu9XPVKhU5JGS1yDt7_Z5ws/edit#'>find older journal entries here</a>.
