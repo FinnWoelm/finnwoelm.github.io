@@ -3,7 +3,7 @@ layout: post
 title:  "React/Next.js File structure"
 date:   2019-02-27
 categories: react
-excerpt: "How I structure directories, folders, and files of my React/Next.js projects"
+excerpt: "How I structure directories, folders, and files of my React/Next.js projects."
 ---
 
 Have you heard of [Next.js](https://github.com/zeit/next.js) yet? It's an
