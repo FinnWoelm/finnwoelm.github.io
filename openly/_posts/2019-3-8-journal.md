@@ -34,7 +34,7 @@ problem at hand. Who cares if it's you or me who solves it? Fact is that we'll
 all be better off if we openly share our findings and put our brains together.
 
 Incredibly inspiring. Yes, open collaboration still niche. But I like to imagine
-that one day, open and collaborative will the standard. Political participation
+that one day, open and collaborative will be the standard. Political participation
 will no longer be limited to voting, but citizens will be involved in the
 crafting of laws and policies at every level. Ordinary citizens' engagement with
 non-profits will no longer be just donations and signing petitions online, but
