@@ -1,0 +1,18 @@
+---
+layout: page
+title:  SDGs Journal
+description: My journey to understand and contribute to the achievement of the UN's Sustainable Development Goals (SDGs).
+order: 3
+---
+
+{% for post in site.categories.sdgs %}
+  <div id='{{ post.date | date: "%b-%-d-%Y" | downcase }}'>
+    <p>
+      <b>{{ post.date | date: "%b %-d, %Y // %l:%M%P" }} @ {{ post.location }}</b>
+    </p>
+
+    {{ post.content }}
+  </div>
+
+  <div class='divider'></div>
+{% endfor %}

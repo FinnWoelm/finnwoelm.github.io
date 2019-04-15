@@ -4,6 +4,9 @@ layout: default
 <div class="container">
   <header class="post-header center-align">
     <h1 class="page-heading">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="flow-text page-description grey-text text-darken-2">{{ page.description }}</p>
+    {% endif %}
   </header>
 </div>
 
