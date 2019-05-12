@@ -7,11 +7,13 @@
 
     {% include header.html %}
 
-    <main>
+    <main class="{{layout.type}}">
       {{ content }}
     </main>
 
-    {% include footer.html %}
+    {% unless layout.skip_footer %}
+      {% include footer.html %}
+    {% endunless %}
 
     {% include materialize_auto_init.html %}
 
