@@ -1,18 +1,10 @@
 ---
-layout: page
+layout: iframe-page
 title:  SDGs Journal
-description: My journey to understand and contribute to the achievement of the UN's Sustainable Development Goals (SDGs).
 order: 3
 ---
 
-{% for post in site.categories.sdgs %}
-  <div id='{{ post.date | date: "%b-%-d-%Y" | downcase }}'>
-    <p>
-      <b>{{ post.date | date: "%b %-d, %Y // %l:%M%P" }} @ {{ post.location }}</b>
-    </p>
-
-    {{ post.content }}
-  </div>
-
-  <div class='divider'></div>
-{% endfor %}
+<iframe
+  src="https://docs.google.com/document/d/1qmD2G9fQSF0XfpqrdA1v3x4dPXU3hFe30Gu2e3mBWww/edit?rm=minimal"
+  style='width:100%; height:100%; border:none;'>
+</iframe>
